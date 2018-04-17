@@ -1,3 +1,17 @@
+/*
+* CSCI 290 - Event Driver Programming
+* Chuck Nelson, Associate Professor
+*
+* Student Information (please complete ? below)
+*    Name:         Myracle Jackson
+*    School Email: mj148182@rockford.edu
+* Class Information
+*    Section:      290.01
+* Assignment Information
+*                  Exercise4.5
+*                  CSendReceive App
+*---------------------------------------------------------------------
+*/
 // CSendReceive App
 #include <afxwin.h>
 #include  <afxole.h>

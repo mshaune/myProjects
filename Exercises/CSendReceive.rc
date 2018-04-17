@@ -1,0 +1,46 @@
+/*
+* CSCI 290 - Event Driver Programming
+* Chuck Nelson, Associate Professor
+*
+* Student Information (please complete ? below)
+*    Name:         Myracle Jackson
+*    School Email: mj148182@rockford.edu
+* Class Information
+*    Section:      290.01
+* Assignment Information
+*                  Exercise4.5
+*                  CSendReceive App
+*---------------------------------------------------------------------
+*/
+// CSendReceive App
+
+#include "afxres.h"
+#include "CSendReceive_ids.h"
+
+// Syntax:
+// nameID DIALOG x, y, width, height
+CSendReceiveDialog DIALOG   20, 20, 250, 170
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP |
+     WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "CSendReceive App"
+FONT 14, "Arial"
+{
+    LTEXT         "Enter text:", IDC_STATIC,  30,   15, 50, 10
+    // Define edit text with identifier IDC_TEXT,
+    // position (30, 30) and size 70 by 64
+    // edit styles multiline and auto vertical scroll
+    EDITTEXT      IDC_SOURCE,   30,  30, 70, 64,
+                  ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON    "Send", IDC_SEND, 50, 105, 30,  15
+
+    LTEXT         "Received Text:", IDC_STATIC, 150, 15,  50, 10
+    EDITTEXT      IDC_DESTINATION,         150, 30, 70, 64,
+                  ES_MULTILINE | ES_WANTRETURN | WS_VSCROLL
+
+    PUSHBUTTON    "Receive", IDC_RECEIVE,  170, 105, 30,  15
+
+    PUSHBUTTON    "Clear All", IDC_CLEAR,  110, 105, 30,  15
+
+    PUSHBUTTON    "OK",     IDOK,          50,  130, 30,  15
+    PUSHBUTTON    "Cancel", IDCANCEL,      170, 130, 30,  15
+}
