@@ -16,5 +16,4 @@
 #define IDM_ORANGESODA 2066
 #define IDM_CHEESEBURGER 2055
 
-// TODO: ADD your new ids below
 
