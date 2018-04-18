@@ -1,0 +1,92 @@
+/*
+* CSCI 290 - Event Driver Programming
+* Chuck Nelson, Associate Professor
+*
+* Student Information (please complete ? below)
+*    Name:         Myracle Jackson
+*    School Email: mj148182@rockford.edu
+* Class Information
+*    Section:      290.01
+* Assignment Information
+*                  MusicOpenDlg
+*---------------------------------------------------------------------
+*/
+#include <afxres.h>
+#include "MusicOpenDlg_ids.h"
+
+MusicApp DIALOG  50, 50, 320, 200
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU |
+WS_THICKFRAME
+CAPTION "Music Common Dialog"
+MENU Music
+FONT 12, "Courier New"
+{
+   LTEXT          "--- File Text ---",
+                  IDC_STATIC, 20, 10, 100, 8
+
+   // Define edit text with identifier IDC_TEXT,
+   // position (30, 30) and size 70 by 64
+   // edit styles multiline and auto vertical scroll
+   EDITTEXT       IDC_TEXT, 20, 20, 280, 100,
+                  ES_MULTILINE | WS_VSCROLL | ES_READONLY
+
+   //
+   // add labels & count fields to gui
+   // three labels
+   // label #1
+   LTEXT          "Total Record Count",
+      IDC_STATIC, 20, 140, 100, 8
+   /* TODO #1: add labels to gui
+      code the next two labels for the gui screen
+     see directions for sample completed screen
+   */
+   // STUDENT CODE BEGINS
+
+   LTEXT          "Good Record Count",
+   IDC_STATIC, 20, 150, 100, 8
+
+   LTEXT          "Bad Record Count",
+   IDC_STATIC, 20, 160, 100, 8
+
+   // STUDENT CODE ENDS
+
+   // read only edit boxes for the counts
+   EDITTEXT      IDC_TOTAL, 120, 140, 20, 8,
+      ES_READONLY | NOT WS_TABSTOP | WS_BORDER | ES_RIGHT
+   /* TODO #2: add read only edit count fields to gui
+      code the next two read only edit controls for the gui screen
+      code two EDITTEXT controls. One will have the
+      IDC_GOOD and one will have the IDC_BAD attribute.
+      Both will have the same four other attributes
+         (read only, no tab stop, simple border, right justification)
+      Properly position the two controls on the screen.
+     see directions for sample completed screen
+   */
+   // STUDENT CODE BEGINS
+
+   EDITTEXT      IDC_GOOD, 120, 150, 20, 8,
+   ES_READONLY | NOT WS_TABSTOP | WS_BORDER | ES_RIGHT
+
+   EDITTEXT      IDC_BAD, 120, 160, 20, 8,
+   ES_READONLY | NOT WS_TABSTOP | WS_BORDER | ES_RIGHT
+
+   // STUDENT CODE ENDS
+}
+
+//////////////////////////////////////////////////////////////
+//
+// Menu
+//
+Music MENU
+{
+   POPUP "File"
+   {
+      MENUITEM "&Open", IDM_OPEN
+      MENUITEM "C&lose", IDM_CLOSE
+      MENUITEM SEPARATOR
+      MENUITEM "E&xit", IDM_EXIT
+   }
+
+}
+
+
