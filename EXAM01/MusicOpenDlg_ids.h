@@ -1,17 +1,3 @@
-/*
-* CSCI 290 - Event Driver Programming
-* Chuck Nelson, Associate Professor
-*
-* Student Information (please complete ? below)
-*    Name:         Myracle Jackson
-*    School Email: mj148182@rockford.edu
-* Class Information
-*    Section:      290.01
-* Assignment Information
-*                  MusicOpenDlg
-*---------------------------------------------------------------------
-*/
-
 // dialog screen items
 #define IDC_TEXT     2001
 #define IDC_COUNT    2002
