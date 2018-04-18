@@ -1,27 +1,3 @@
-/*
-* CSCI 290 - Event Driver Programming
-* Chuck Nelson, Associate Professor
-*
-* Student Information (please complete ? below)
-*    Name:         Myracle Jackson
-*    School Email: mj148182@rockford.edu
-* Class Information
-*    Section:      290.01
-* Assignment Information
-*                  Exercise2.7
-*---------------------------------------------------------------------
-TODO #1: First, add these four files to an MFC project and run. There should be
-no errors. Try each option so that you know how the program operates
-before you enhance this program.
-
-TODO #2: Modify the menu program () by adding these features...
--include one more food item for each menu  (no changes to FILE menu)
--implement a new menu option to let the manager increase ALL prices
-by a one-percent surcharge each time this option is selected
-The surcharge menu option should have its own event handler like...
- (afx_msg void OnSurcharge(); in .h file)
-
-*/
 // Fig. 2.11: menus.cpp
 // create menus with MFC
 
